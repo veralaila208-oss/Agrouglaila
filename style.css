@@ -1,0 +1,40 @@
+/* Estilos personalizados adicionales para AgroGeo UG */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #030712;
+    color: #f1f5f9;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0b1329;
+}
+::-webkit-scrollbar-thumb {
+    background: #0072CE;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0099ff;
+}
+
+/* Animaciones suaves para transiciones de pestañas */
+.vista-content {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
